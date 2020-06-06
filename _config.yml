@@ -1,0 +1,23 @@
+# Setup
+title:               Hashir Ahmad
+tagline:             Blog
+description:         'Welcome to my blog!'
+url:                 https://hash-ir.github.io
+baseurl:             ''
+paginate:            5
+permalink:           pretty
+avatar:              https://drive.google.com/file/d/1b06yR4N3QlM7iX_OBNHlBmLsDiYMqIfv/view?usp=sharing
+
+# About/contact
+author:
+  name:              Hashir 
+  url:               https://github.com/hash-ir
+  email:             hashirahmad@zhcet.ac.in
+
+# Gems
+plugins:
+  - jekyll-paginate
+
+# Custom vars
+version:             1.1.0
+google_analytics_id: #UA-XXXX-Y
