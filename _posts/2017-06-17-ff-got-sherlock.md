@@ -58,7 +58,7 @@ Robert Baratheon is devastated by the death of her beloved, Lyanna Stark. He ord
 * Sherlock: I’ll take that as a yes.
 (enters mind palace)
 
-* John: :|
+* John: Here we go again!
 
 *(somewhere in Westeros)*
 
