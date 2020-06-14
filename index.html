@@ -13,7 +13,12 @@ title: Home
       </a>
     </h2>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+    <span class="post-date">
+      {{ post.date | date_to_string }}
+      {% if post.author %}
+        | {{ post.author }}
+      {% endif %}
+    </span>
     {{ post.excerpt }}
     <a href="{{ post.url | absolute_url }}">Read more...</a>
   </div>

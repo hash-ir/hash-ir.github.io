@@ -2,6 +2,7 @@
 layout: post
 title: Sherlock meets Robert Baratheon
 comments: true
+author: Hashir Ahmad
 ---
 > How would Sherlock reply to Robert Baratheon if he asks him to investigate Lyanna Stark's death?
 
