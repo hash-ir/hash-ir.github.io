@@ -7,6 +7,7 @@ layout: default
   <span class="post-date">{{ page.date | date_to_string }}</span>
   {{ content }}
   {% if page.comments %}
+    <h2 class="post-title">Comments</h2>
     {% include disqus.html %}
   {% endif %}
 </div>

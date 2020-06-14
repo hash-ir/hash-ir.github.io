@@ -3,13 +3,13 @@ layout: post
 title: Sherlock meets Robert Baratheon
 comments: true
 ---
-### How would Sherlock reply to Robert Baratheon if he asks him to investigate Lyanna Stark's death?
+> How would Sherlock reply to Robert Baratheon if he asks him to investigate Lyanna Stark's death?
 
 **Prologue**
 
 Robert Baratheon is devastated by the death of her beloved, Lyanna Stark. He orders his hand, Ned Stark to send a raven to 221B Baker Street, London to summon Sherlock and Dr. John Watson to King’s Landing, and investigate the matter concerning Lyanna’s death.
 
-*(in 21st century London)*
+*21<sup>st</sup> century London...*
 
 * Mrs. Hudson: Sherlock!!! Sherlock!! You’ve got a letter……with an unusual seal on it.
 (climbs up the stairs)
@@ -61,7 +61,7 @@ Robert Baratheon is devastated by the death of her beloved, Lyanna Stark. He ord
 
 * John: Here we go again!
 
-*(somewhere in Westeros)*
+*somewhere in Westeros...*
 
 * Sherlock: C’mon John! We have to reach King’s Landing.
 
@@ -71,7 +71,7 @@ Robert Baratheon is devastated by the death of her beloved, Lyanna Stark. He ord
 
 * John: (Nods reluctantly)
 
-*(stranger passing by)*
+*stranger passing by...*
 
 * John: Mister! Mister!!!!
 
@@ -99,7 +99,7 @@ Robert Baratheon is devastated by the death of her beloved, Lyanna Stark. He ord
 
 * Sherlock: WHAT? We got a free ride!
 
-*(at King’s Landing)*
+*at King’s Landing...*
 
 * Stranger: Here you go mates.
 
@@ -115,7 +115,7 @@ Robert Baratheon is devastated by the death of her beloved, Lyanna Stark. He ord
 
 * Sherlock: Impressive, John!! Let’s meet the King now, shall we?
 
-*(at Great Hall, Red Keep)*
+*at Great Hall, Red Keep...*
 
 * Ned: You have arrived. Seven blessings to you, Sherlock and John Watson. I am Lord Eddard Stark—Hand of the King, Lord of Winterfell, and Warden of the North.
 
@@ -125,7 +125,7 @@ Robert Baratheon is devastated by the death of her beloved, Lyanna Stark. He ord
 
 * Ned: King Robert will be very pleased to see you.
 
-*(Robert Baratheon arrives)*
+*Robert Baratheon arrives...*
 
 * Robert: Ah! So you are SHERLOCK. Have heard much about you.
 
