@@ -3,6 +3,7 @@ layout: post
 title: Sheldon Cooper meets Hanno Tauber (Noah)
 comments: true
 author: Hashir Ahmad
+tags: [fan-fiction]
 ---
 > How would Sheldon Cooper react to Noah arriving at his place and asking to travel with him to the year 1987?
 

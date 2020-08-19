@@ -1,6 +1,27 @@
 ---
 layout: default
 ---
+{% assign post = page %}
+{% if post.tags.size > 0 %}
+    {% capture tags_content %}Posted with {% if post.tags.size == 1 %}<i class="fa fa-tag"></i>{% else %}<i class="fa fa-tags"></i>{% endif %}: {% endcapture %}
+    {% for post_tag in post.tags %}
+        {% comment %}
+        {% assign tag = site.data.tags[post_tag] %}
+        {% endcomment %}
+        
+        {% for data_tag in site.data.tags %}
+            {% if data_tag.slug == post_tag %}
+                {% assign tag = data_tag %}
+            {% endif %}
+        {% endfor %}
+        {% if tag %}
+            {% capture tags_content_temp %}{{ tags_content }}<a href="/blog/tag/{{ tag.slug }}/">{{ tag.slug }}</a>{% if forloop.last == false %}, {% endif %}{% endcapture %}
+            {% assign tags_content = tags_content_temp %}
+        {% endif %}
+    {% endfor %}
+{% else %}
+    {% assign tags_content = '' %}
+{% endif %}
 
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
@@ -10,6 +31,8 @@ layout: default
         | {{ page.author }}
       {% endif %}
   </span>
+  <p id="post-meta">{{ tags_content }}</p>
+
   {{ content }}
   {% if page.comments %}
     <h2 class="post-title">Comments</h2>
@@ -17,6 +40,7 @@ layout: default
   {% endif %}
 </div>
 
+<!--
 {% if site.related_posts.size >= 1 %}
 <div class="related">
   <h2>Related posts</h2>
@@ -34,3 +58,4 @@ layout: default
   </ul>
 </div>
 {% endif %}
+-->
