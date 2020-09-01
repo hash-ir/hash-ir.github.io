@@ -3,7 +3,7 @@ layout: post
 title: Sherlock meets Robert Baratheon
 comments: true
 author: Hashir Ahmad
-tags: [fan-fiction]
+tags: [fan-fiction, fictional-crossovers]
 ---
 > How would Sherlock reply to Robert Baratheon when he asks him to investigate Lyanna Stark's death?
 
