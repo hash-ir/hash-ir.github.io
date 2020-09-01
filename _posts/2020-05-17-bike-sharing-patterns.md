@@ -51,10 +51,11 @@ The input has a mean of $0$ and standard deviation of $1$. If we choose the same
 The forward pass builds the computational graph in the following way:
 
 1. $h^{\prime} = XW^{(1)}$
-2. $ h = \text{sigmoid}(h^{\prime}) $
+2. $h = \text{sigmoid}(h^{\prime})$
 3. $o = hW^{(2)}$
+4. $L = \frac{1}{N}\sum_{i=0}^{N}(y_i-o_i)^2$
 
-where $W^{(1)}$ and $W^{(2)}$ are the weights of hidden and output layer respectively. There is no activation at the output layer since we are want real values for the number of riders.
+where $X$ is the input, $h^{\prime}$ is the pre-activated hidden output, $h$ is the activated hidden output, $W^{(1)}$ and $W^{(2)}$ are the weights of hidden and output layer respectively, $o$ is the final output and $L$ is the mean squared error between the grount truth $y$ and output $o$ for $N$ records. There is no activation at the output layer since we want real values for the number of riders. 
 
 <script src="https://gist.github.com/hash-ir/21072d11b1a39f14305b6116c6a6e25c.js"></script>
 
@@ -64,7 +65,15 @@ The backward pass calculates the gradients (partial derivates) at every layer to
 <script src="https://gist.github.com/hash-ir/b9be1c98cf9f0a75cfcd9ccf51e8bd7e.js"></script>
 <script src="https://gist.github.com/hash-ir/f4baf6ba61f95f9f3046d8e5dd7387dc.js"></script>
 <script src="https://gist.github.com/hash-ir/e37509a7cca23a9e51d07b2719cc0c7a.js"></script>
+
+### Hyperparameter tuning
+We can tune the hyperparameters to improve the training performance. This can be done simply by changing the values and training to check the performance increase or decrease like below:
+
 <script src="https://gist.github.com/hash-ir/2a4b106264cb6ecd8f9268217123befb.js"></script>
+
+This can take a lot of time since we have no idea how to select the best configuration locally if we are trying out random values. Further, since these hyperparameters jointly determine the training performance, it is very hard to determine the optimal values. Instead, we use Grid Search to span over a range of values for each hyperparameter and train separately.
+
+<script src="https://gist.github.com/hash-ir/81b773a36014409b80eade58d0e236fe.js"></script>
 
 
 
