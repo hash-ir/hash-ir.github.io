@@ -9,5 +9,7 @@ I have used [Lanyon](https://lanyon.getpoole.com/), a minimalistic jekyll theme.
 * Google Analytics (July 7, 2020)
 * Categorization of posts by tags (August 20, 2020)
 * MathJax support for math expressions (August 20, 2020)
+* Link preview using `jekyll-seo-tag` (September 4, 2020) - *needs improvement*
+* Create drafts of posts without publishing (September 4, 2020)
 
 I will update the readme with a detailed guide about each feature!
