@@ -27,11 +27,14 @@ In `disqus.js`, paste the universal code from before. For a post to display the 
 comments: true
 ```
 If everything goes well, you will see something like this below your post:
-[TODO]
+
+![comments-box](public/images/comments.PNG)
 
 ### Author name and post excerpt (June 15, 2020)
 This looks like below:
-[TODO]
+
+![author-excerpt](public/images/author-excerpt.PNG)
+
 It can be done easily using Jekyll's Liquid templating. In order to display the author's name and excerpt on the post page as well as on the home page, we have to modify `post.html` and `index.html`. In the `<div class="post">` element of both files, add the following under `page.date` (`post.date` in `index.html`) variable:
 ```html
 {% if page.author %}
