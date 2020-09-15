@@ -28,12 +28,12 @@ comments: true
 ```
 If everything goes well, you will see something like this below your post:
 
-![comments-box](public/images/comments.PNG)
+<img src="public/images/comments.PNG" alt="comments-box" width="600px" />
 
 ### Author name and post excerpt (June 15, 2020)
 This looks like below:
 
-![author-excerpt](public/images/author-excerpt.PNG)
+<img src="public/images/author-excerpt.png" alt="author-excerpt" width="600px" />
 
 It can be done easily using Jekyll's Liquid templating. In order to display the author's name and excerpt on the post page as well as on the home page, we have to modify `post.html` and `index.html`. In the `<div class="post">` element of both files, add the following under `page.date` (`post.date` in `index.html`) variable:
 ```html
