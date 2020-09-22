@@ -5,39 +5,42 @@ comments: true
 author: Hashir Ahmad
 tags: [machine-learning, deep-learning, philosophical]
 ---
-How many times did you have to remember what precision and recall actually are? You might remember the expressions for their calculation but you don't find them very intuitive. At least I don't. I have to look up and see the examples to understand the relevance of each and their counter-balancing nature.
+![precision-recall](https://images.unsplash.com/photo-1550985543-49bee3167284?ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80)
 
-Both precision and recall are widely used metrics in Machine Learning. Let's look at the wikipedia definitions of each:
+How many times did you have to remember what precision and recall actually are? You might know the formulation but agree with me, they are not very intuitive. Personally, I have see an example every time to understand them and their counter-balancing nature.
+
+Both precision and recall are widely used metrics in Machine Learning. On a quick search, this is what defines precision and recall:
 
 > Precision (also called positive predictive value) is the fraction of relevant instances among the retrieved instances, while recall (also known as sensitivity) is the fraction of the total amount of relevant instances that were actually retrieved.
 
-It's not too complicated to understand but somehow, the words *relevant* and *retrieved* make a mess and mix the definitions when you try to remember them. It is bound to happen since both the sentences have a similar structure but our mind loves to identify patterns in order to distinguish one thing from another.
+It's not as complicated as it seems from the definitions but somehow, the words *relevant* and *retrieved* make a mess. If you try to apply these metrics using their textual definitions, it might occur that you have to double check or see an example. This makes sense since both the definitions have a similar structure but our brain is wired to identify patterns to distinguish one thing from another.
 
-I have written a piece which might not make our understanding better but surely provide a lasting memory for these metrics. Before we begin, I would like to introduce the two characters in our story - *Professor* and *Student*. For the sake of simplicity, let's assume the professor and student do not have the Computer Science background. . I have enclosed in brackets the term which is being referred to in the dialogue. With that being said, let's get started:
+I have written a dialogue which may not make our understanding better but surely provides an intuitive perspective on these metrics. Before we begin, I would like to introduce the two characters in our dialogue - *Professor* and *Student*. For the sake of simplicity, let's assume the professor and student are not from the Computer Science background. When you read through the dialogue, there are some lines which depict the metrics - precision and recall and their relative degree. It's important to read the dialogue without wondering about the depiction. Later, you can ponder and connect the lines with the metrics. With that being said, let's get started.
 
 > A student asks the Professor what is it that he really wants. The Professor is kind enough to answer in a philosophical way, teaching the student a deeper understanding of life and something which he is unaware of (precision and recall)
 
-Student: Professor, how do I know what I want?
+"Professor, how do I know what I want?", asked a curious student.
 
-Professor: You don't. You take something and decide if you wanted it or not.
+Professor said, "You don't. You take something you come across and decide if you want it or not."
 
-Student: OK. How about I take all that is offered? (high recall)
+"OK. How about I take all that is offered to me?", the student inquired. *(high recall)* 
 
-Professor: But then you also get the things that you don't want? (false positive, low precision)
+"Fine. But then you also take the things that you don't want.", the Professor explained. *(false positive, low precision)*
 
-Student: What if I don't want anything? (low precision, low recall)
+The student still unsure further asked, "What if I don't want anything?" *(low precision, low recall)*
 
-Professor: Highly unlikely. Everybody needs something!
+Encouragingly, the Professor replied, "Highly unlikely. Everybody needs something!"
 
-Student: Ummm, how about I take only a few things? (high precision)
+"Ummm, how about I take only a few things?", said the student being careful. *(high precision)*
 
-Professor: Sure, but then you are missing out on the things you really want (false negative, low recall)
+"Sure, but then you are missing out on the things you really want.", the wise Professor said. *(false negative, low recall)*
 
-Student: OK. Then I take only the things I want. (high precision, high recall)
+The student thinking he figured out his life, replied, "OK. Then I take only the things I want." *(high precision, high recall)*
 
-Professor: If only you know what you really want!
+The Professor paused for a moment and then whispered, "If only you know what you really want!"
 
-The professor made the student understand precision and recall without himself knowing anything about it. This is what makes the world a beautiful place. All the things that we discover and give fancy titles to have already been present naturally. I hope when you come across these metrics again in your life, you will recall this short story and it will all be natural to understand them precisely.
+The professor, having no idea about precision and recall, made the student understand their counter-balancing nature. It is wonderful to realize the things that we formalize have already been present naturally since the start of time. This is what makes the world a beautiful place. I hope when you come across these metrics again in your life, you will *recall* this piece and apply them *precisely*.
 
 ### References
+* Photo by [William Warby](https://unsplash.com/@wwarby) on [Unsplash](https://unsplash.com/)
 * [Precision and recall (Wikipedia)](https://en.wikipedia.org/wiki/Precision_and_recall)
