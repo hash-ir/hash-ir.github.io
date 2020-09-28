@@ -17,76 +17,50 @@ With this, you will be able to use the features and create new posts only. Local
 1. Sign Up for a GitHub account if you don't have one.
 2. For a minimal installation, fork the original lanyon [repository](https://github.com/poole/lanyon) by clicking the "Fork" button in the top right. Otherwise, for additional features, fork this repository.
 3. Go to your forked repository settings. Rename the repository to [username].github.io.
-4. Set site-wide configuration by editing the *_config.yml*. You can set the blog title, description, author and other meta features. Have a look [here](https://github.com/hash-ir/hash-ir.github.io/blob/master/_config.yml). 
-5. Check status of your deployment in the repository settings under "GitHub pages" section.
+4. Set site-wide configuration by editing the *_config.yml* file. You can set the blog title, description, author and other meta features. Have a look [here](https://github.com/hash-ir/hash-ir.github.io/blob/master/_config.yml). 
+5. Check status of your deployment in the repository settings under "GitHub Pages" section. You should be seeing a green tick with the message "Your site is published at https://[username].github.io/"
 
 ## Installation (locally)
 With this, you can locally run the jekyll site, preview posts and add new features or plugins:
 1. Clone the forked repository after doing the steps above.
 2. Install ruby, ruby-gems, jekyll and other dependencies from [here](https://jekyllrb.com/docs/installation/).
 3. The plugins used in the site are listed in both *_config.yml* and *Gemfile*. Run `bundle clean` followed by `bundle install` to install the plugins. If there is any error, delete *Gemfile.lock* and try again.
-4. In the repository directory, run `jekyll serve`. If everything works correctly, you will be able to see the local deployment. 
+4. In the repository directory, run `jekyll serve`. If everything works correctly, you will be able to see the local deployment at http://127.0.0.1:4000/ or http://localhost:4000/.
+5. If you want to use livereload of pages, run `jekyll serve --livereload`. As per the documentation, livereload is built into Jekyll 3.7+. If it doesn't work, make sure `jekyll-paginate` is listed in *_config.yml* in the following manner:
+```html
+plugins:
+ - jekyll-paginate
+```
+Then do the following:
+```bash
+gem install jekyll-paginate
+gem uninstall eventmachine
+gem install eventmachine --platform ruby -- --use-system-libraries --with-ssl-dir=C:/Ruby26-x64/msys64/mingw64
+ruby -reventmachine -e "puts EM.ssl?"  => true
+```
+Replace `--with-ssl-dir` path with your installation of MinGW64. If you installed Ruby with all the development tools, it will be in the Ruby installation directory like above. After that, run `jekyll serve --livereload`.
 
 ## Usage
-[TODO]
+This is really simple. You can create posts as markdown files in *_posts* directory. The posts are chronologically ordered based on their name. The name follows the convention `YYYY-MM-DD-name-of-the-post.md`. The name of the file becomes the url (https://[username].github.io/YYYY/MM/DD/name-of-the-post/) when the html is rendered. Inside the markdown file, there should be a frontmatter section (between `---` and `---`) at the top. This section describes the meta information about the post (layout, title, author etc) and is rendered based on the layout described in the Jekyll theme you are using. For example:
+```html
+---
+layout: post
+title: My Awesome Post
+author: John Doe
+---
+```
+You can also create post drafts which will not be rendered when your site is published. These should be created in a separate directory *_drafts*. The drafts are also markdown files and should have the frontmatter at the top. You can name the drafts anything you like until you move them to the *_posts* directory. The drafts can be previewed locally by running `jekyll serve --livereload --drafts`.
 
 ## Features
-I have used [Lanyon](https://lanyon.getpoole.com/), a minimalistic jekyll theme. I also added the following features on top which make this blog exceedingly amazing: 
-### Disqus comments (June 10, 2020)
-Sign up at [Disqus](https://disqus.com/). Go to settings and select *Add Disqus to Site*. Enter the site name and other details. Finally, select *Universal Code* as your platform. Save the universal code given under comment box. 
+I have used [Lanyon](https://lanyon.getpoole.com/), a minimalistic jekyll theme. The following features have been added which make this blog exceedingly amazing. The detailed guides are available in the Wiki
+1. Disqus comments (June 10, 2020)
+2. Author name and post excerpt (June 15, 2020)
+3. Google Analytics (July 7, 2020)
+4. Categorization of posts by tags (August 20, 2020)
+5. MathJax support for math expressions (August 20, 2020)
+6. Link preview using `jekyll-seo-tag` (September 4, 2020)
+7. Create drafts of posts without publishing (September 4, 2020)
 
-In `post.html` after the post content or where ever you want to display the comments, add the following:
-```html
-{% if page.comments %}
-  <h2>Comments</h2>
-  {% include disqus.html%}
-{% endif %}
-```
-The `if` logic only displays comments when they are turned on in the frontmatter (shown below). Now, create an html file `disqus.html` and a javascript file `disqus.js`. Add the following lines to `disqus.html`:
-```html
-<div id="disqus_thread"></div>
-  <script src="/public/js/disqus.js"></script>
-  <noscript>
-    Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-  </noscript>
-```
-In `disqus.js`, paste the universal code from before. For a post to display the comments, add the following in the post frontmatter.
-```html
-comments: true
-```
-If everything goes well, you will see something like this below your post:
-
-<img src="public/images/comments.PNG" alt="comments-box" width="600px" />
-
-### Author name and post excerpt (June 15, 2020)
-This looks like below:
-
-<img src="public/images/author-excerpt.png" alt="author-excerpt" width="600px" />
-
-It can be done easily using Jekyll's Liquid templating. In order to display the author's name and excerpt on the post page as well as on the home page, we have to modify `post.html` and `index.html`. In the `<div class="post">` element of both files, add the following under `page.date` (`post.date` in `index.html`) variable:
-```html
-{% if page.author %}
-  | {{ page.author }}
-{% endif %}
-```
-The `author` variable is added in the post frontmatter as below:
-```html
-author: John Doe
-```
-For the post excerpt, we modify only the `index.html` and add `{{ post.excerpt }}` under author information. You can also add a *Read More...* hyperlink which opens the post page:
-```html
-<a href="{{ post.url | absolute_url }}">Read more...</a>
-```
-### Google Analytics (July 7, 2020)
-[TODO]
-### Categorization of posts by tags (August 20, 2020)
-[TODO]
-### MathJax support for math expressions (August 20, 2020)
-[TODO]
-### Link preview using `jekyll-seo-tag` (September 4, 2020)
-[TODO]
-### Create drafts of posts without publishing (September 4, 2020)
-[TODO]
 
 ## Contributing
 [TODO]
