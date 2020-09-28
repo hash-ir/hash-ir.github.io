@@ -52,7 +52,7 @@ author: John Doe
 You can also create post drafts which will not be rendered when your site is published. These should be created in a separate directory *_drafts*. The drafts are also markdown files and should have the frontmatter at the top. You can name the drafts anything you like until you move them to the *_posts* directory. The drafts can be previewed locally by running `jekyll serve --livereload --drafts`.
 
 ## Features
-I have used [Lanyon](https://lanyon.getpoole.com/), a minimalistic jekyll theme. The following features have been added which make this blog exceedingly amazing. The detailed guides are available in the Wiki
+I have used [Lanyon](https://lanyon.getpoole.com/), a minimalistic jekyll theme. The following features have been added which make this blog exceedingly amazing. The detailed guides are available in this repository's [Wiki](https://github.com/hash-ir/hash-ir.github.io/wiki/Features).
 1. Disqus comments (June 10, 2020)
 2. Author name and post excerpt (June 15, 2020)
 3. Google Analytics (July 7, 2020)
@@ -66,7 +66,7 @@ I have used [Lanyon](https://lanyon.getpoole.com/), a minimalistic jekyll theme.
 [TODO]
 
 ## Credits
-[TODO]
+* Lanyon theme - [Mark Otto](https://github.com/mdo)
 
 ## License
 The license is extended from the source [repository](https://github.com/poole/lanyon). See the license [file](https://github.com/hash-ir/hash-ir.github.io/blob/master/LICENSE.md) for details.
