@@ -11,7 +11,7 @@ def generate_tag_slug():
 
     root_dir = get_root_dir()
     posts_dir = os.path.join(root_dir, '_posts')
-    posts = os.listdir(posts_dir)
+    drafts_dir = os.path.join(root_dir, '_drafts')
     
     # read lines from _data/tags.yml
     with open(os.path.join(root_dir, '_data/tags.yml'), 'r') as f:
@@ -25,19 +25,23 @@ def generate_tag_slug():
 
     flag = 0
     print('Generating tag slugs...')
-    for post in posts:
-        
-        # get tags in the frontmatter of post 
-        tags = get_post_tags(post, posts_dir)
+    for dir in [posts_dir, drafts_dir]:
+        print('Fetching posts from {}'.format(dir))
 
-        for tag in tags:
+        for post in os.listdir(dir):
+            
+            # get tags in the frontmatter of post 
+            tags = get_post_tags(post, dir)
 
-            # create a tag slug if it does not exist
-            if tag not in existing_tags:
-                f.write('- slug: '+tag)
-                f.write('\n')
-                print('Added {} to data/tags.yml'.format(tag))
-                flag = 1
+            for tag in tags:
+
+                # create a tag slug if it does not exist
+                if tag not in existing_tags:
+                    f.write('- slug: '+tag)
+                    f.write('\n')
+                    print('Added {} to data/tags.yml'.format(tag))
+                    flag = 1
+        print()
 
     f.close()
 
