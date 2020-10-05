@@ -63,10 +63,10 @@ I have used [Lanyon](https://lanyon.getpoole.com/), a minimalistic jekyll theme.
 
 
 ## Contributing
-[TODO]
+Contributions (bug fix/feature/documentation) are welcomed! Please read the [Contributors' guide](docs/CONTRIBUTING.md) for details.
 
 ## Credits
 * Lanyon theme - [Mark Otto](https://github.com/mdo)
 
 ## License
-The license is extended from the source [repository](https://github.com/poole/lanyon). See the license [file](https://github.com/hash-ir/hash-ir.github.io/blob/master/LICENSE.md) for details.
+The license is extended from the source [repository](https://github.com/poole/lanyon). See the license [file](LICENSE.md) for details.
