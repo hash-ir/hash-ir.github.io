@@ -2,42 +2,52 @@
 layout: default
 title: Home
 ---
-
-<div class="posts">
-  <h1>Recent Posts</h1><br>
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h2 class="post-title">
-      <a href="{{ post.url | absolute_url }}">
-        {{ post.title }}
-      </a>
-    </h2>
-
-    <span class="post-date">
-      {{ post.date | date_to_string }}
-      {% if post.author %}
-        | {{ post.author }}
-      {% endif %}
-    </span>
-    {{ post.excerpt }}
-    <a href="{{ post.url | absolute_url }}">Read more...</a>
-  </div>
-  {% endfor %}
-</div>
-
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ paginator.next_page_path | absolute_url }}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ '/' | absolute_url }}">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ paginator.previous_page_path | absolute_url }}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
+<div class="post">
+  <h2>Welcome to my page!</h2>
+  <h3>
+    About me
+  </h3>
+  <p style="text-align: justify;">
+    Hi, I am Hashir Ahmad. A graduate student at the Technical
+    University of Munich. I am currently working as a Graduate Assistant
+    at Max Planck Institute of Neurobiology. My work is focused on Connectomics
+    where our research group is performing automated synaptic connectivity
+    inference based on dense EM segmentation data. Previously, I was employed as a 
+    Working Student at Huawei Munich Research Center where I worked on modeling thermogram data and 
+    operational parameters of a 2x2 RF Chipset.
+  </p>
+  <p style="text-align: justify;">
+    Additionally, I mentor undergraduate students as part of the 
+    <a href="http://ssgsa.us/">SSGSA (Sir Syed Global Scholar Award)</a> organization. 
+    In practical terms, my goal is to guide the selected scholars in their admission
+    processes into Universities.
+  </p>
+  <h3>Blog</h3>
+  <p style="text-align: justify;">
+    On this platform, I write technical articles, fan-fiction and stories. Being busy with my Master's life,
+    the blog is not very populated and needs quite a bit of
+    work. Nonetheless, I will be updating it with some thought 
+    provoking content in the future. Find some of the articles that I have
+    written <a href="#">here</a>.
+  </p>
+  <h3>
+    Interests
+  </h3>
+  <h4>Academic</h4>
+  <ul>
+    <li>Deep Learning</li>
+    <li>Computer Vision</li>
+    <li>Generative Modeling</li>
+    <li>Bioinformatics</li>
+    <li>Graph Neural Networks</li>
+  </ul>
+  <h4>Personal</h4>
+  <ul>
+    <li>Game/Movie Night</li>
+    <li>Travel</li>
+    <li>Cooking</li>
+    <li>Hanging out with friends</li>
+    <li>Occasional writing</li>
+    <li>Football, Cricket</li>
+  </ul>
 </div>

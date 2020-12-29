@@ -1,0 +1,42 @@
+---
+layout: default
+title: Blog
+---
+<div class="posts">
+  <h1>Recent Posts</h1><br>
+  {% for post in paginator.posts %}
+  <div class="post">
+    <h2 class="post-title">
+      <a href="{{ post.url | absolute_url }}">
+        {{ post.title }}
+      </a>
+    </h2>
+
+    <span class="post-date">
+      {{ post.date | date_to_string }}
+      {% if post.author %}
+        | {{ post.author }}
+      {% endif %}
+    </span>
+    {{ post.excerpt }}
+    <a href="{{ post.url | absolute_url }}">Read more...</a>
+  </div>
+  {% endfor %}
+</div>
+
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ paginator.next_page_path | absolute_url }}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="{{ '/' | absolute_url }}">Newer</a>
+    {% else %}
+      <a class="pagination-item newer" href="{{ paginator.previous_page_path | absolute_url }}">Newer</a>
+    {% endif %}
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>
