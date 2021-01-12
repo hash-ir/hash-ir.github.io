@@ -5,7 +5,7 @@ description:         'Welcome to my blog! I hope you find something interesting 
 url:                 https://hash-ir.github.io
 baseurl:             ''
 paginate:            5
-permalink:           pretty
+permalink:           /blog/:title
 avatar:              https://drive.google.com/file/d/1b06yR4N3QlM7iX_OBNHlBmLsDiYMqIfv/view?usp=sharing
 
 # About/contact
