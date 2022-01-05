@@ -1,15 +1,19 @@
 ---
-layout: post
 title: Sheldon Cooper meets Hanno Tauber (Noah)
 comments: true
-author: Hashir Ahmad
-tags: [fan-fiction, fictional-crossovers]
+categories:
+    - Blog
+tags: 
+    - fan-fiction
+    - fictional-crossovers
 ---
 > How would Sheldon Cooper react to Noah arriving at his place and asking to travel with him to the year 1987?
 
 **Prologue** 
 
 Noah arrives in Pasadena California a day before the apocalypse (June 26, 2020) to save Sheldon Cooper. He believes Sheldon’s knowledge about the String Theory and Quantum Physics might be helpful to find a loophole in the never-ending cycle of time. 
+
+<!--more-->
 
 *Noah time travels from the future and arrives at 2311, North Los Robles Avenue, Pasadena, California*
 

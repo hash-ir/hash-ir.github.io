@@ -1,6 +1,5 @@
 ---
-layout: post
-author: Hashir Ahmad
-tags: [draft]
+tags: 
+    - draft
 ---
 Some draft content

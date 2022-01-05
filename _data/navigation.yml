@@ -1,8 +1,12 @@
-- name: Home
-  link: /
+main:
+  - title: "Posts"
+    url: /posts/
 
-- name: About
-  link: /about.html
+  - title: "Categories"
+    url: /categories/
 
-- name: Blog
-  link: /blog.html
+  - title: "Tags"
+    url: /tags/
+
+  - title: "CV"
+    url: /cv/

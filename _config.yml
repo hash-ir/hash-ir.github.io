@@ -1,26 +1,124 @@
-# Setup
-title:               Neuralife
-tagline:             Hashir Ahmad
-description:         'Welcome to my blog! I hope you find something interesting here.'
-url:                 https://hash-ir.github.io
-baseurl:             ''
-paginate:            5
-permalink:           /blog/:title
-avatar:              https://drive.google.com/file/d/1b06yR4N3QlM7iX_OBNHlBmLsDiYMqIfv/view?usp=sharing
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-# About/contact
-author:
-  name:              Hashir 
-  url:               https://github.com/hash-ir
-  email:             hashirahmad@zhcet.ac.in
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
 
-# Gems
+# Site settings
+title: "Neuralife | Hashir Ahmad"
+title_separator: "|"
+subtitle: "Version 2.0"
+name: "Hashir Ahmad"
+locale: "en"
+email: hashirahmad@zhcet.ac.in
+description: >- # this means to ignore newlines until "baseurl:"
+  Hello, I am Hashir Ahmad, a graduate student at the Technical
+  University of Munich. I am currently writing my master thesis 
+  at the Max Planck Institute of Neurobiology. My research interests
+  include Graph Neural Networks and Representation Learning.
+url: "https://hash-ir.github.io"
+repository: "hash-ir/hash-ir.github.io"
+search: true
+
+# User settings
+twitter_username: __hash__ir_
+github_username: hash-ir
+minimal_mistakes_skin: dark # default # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
+
+
+# Build settings
+markdown: kramdown
+remote_theme: mmistakes/minimal-mistakes
+# Outputting
+permalink: /:categories/:title/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+include:
+  - _pages
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+# Plugins (previously gems:)
 plugins:
   - jekyll-paginate
-  - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
 
-# Custom vars
-version:             1.1.0
-google_analytics_id: UA-171868650-1
+author:
+  name   : "Hashir Ahmad"
+  avatar : "/assets/images/bio-photo.jpg"
+  bio    : "Finding similarites and differences between *AI* and *humans*"
+  location: "Munich, Germany"
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/_hash_ir_"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/hash-ir"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/hashir-ahmad/"
 
+footer:
+  links:
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/hashir-ahmad/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/hash-ir"
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      # author_profile: true
+      read_time: true
+      show_date: true
+      comments: true
+      share: true
+      related: true
+      excerpt_separator: <!--more-->
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/

@@ -1,51 +1,34 @@
 ---
-layout: post
-title: Forrest Gump meets Barney Stinson
+title: Forrest Gump meets Joey Tribbiani
 comments: true
-author: Hashir Ahmad
-tags: [fan-fiction, fictional-crossovers]
+categories:
+    - blog
+tags: 
+    - fan-fiction
+    - fictional-crossovers
 ---
 > How would Forrest Gump react when he meets Barney Stinson who offers to be his wingman?
 
 **Prologue**
 
-After meeting Jenny, Forrest Gump arrives in New York City and goes to MacLaren's pub for a drink. There, he meets Barney Stinson eager to 
+Forrest Gump takes Jenny to New York City for a tour. They go to Central Perk for coffee. There, they meet Joey and the gang.
 
-Forrest: (to the bartender) Hi, I would like a martini, please
+Forrest: (to Gunther) Hi there Sir, I would like two cups of coffee please. Jenny, would you like something else?
 
-Barney: Do you also want a brunette on top?
+Jenny: No, that will be all Forrest. I am going to sit there (sits on the couch)
 
-Forrest: (having no idea what a brunette means) No, thank you. I don't drink much alcohol
+*Forrest pays Gunther while Joey arrives at the cafe and checks out Jenny*
 
-Barney: (checks him out) Yeah, you don't. Barney. Barney Stinson.
+Joey: How you doing?
 
-Forrest: Forrest. Forrest Gump.
+Jenny: I am sorry?!
 
-*a lady arrives at the bar...*
+Forrest: Hello!
 
-Barney: Haaaave you met Gump?
-        
-Lady: (looks at Forrest)
+Joey: Oh man, I am really sorry. I didn't see you there
 
-Forrest: (awkwardly) Hello!
+Jenny: Forrest, this guy was hitting on me
 
-*the lady walks away...*
+Forrest: Sir that is not a good thing to do.
 
-Barney: Don't worry. Under my watch, you will score tonight.
-
-Forrest: Score?! What are we playing?
-
-*another lady walks towards them...*
-
-Barney: (to the lady) A game I like to call "Haaaave you met Forrest?"
-
-Lady: Uh, No!
-
-Forrest: Hello. My name is Forrest. Forrest Gumppp!
-
-Lady: (laughs) And what is your name?
-
-Barney: Doesn't matter. So, you, him, tonight? (Oh yeah!) 
-
-Lady: No chance, loser!
 

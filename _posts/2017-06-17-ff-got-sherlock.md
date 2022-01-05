@@ -1,15 +1,19 @@
 ---
-layout: post
 title: Sherlock meets Robert Baratheon
 comments: true
-author: Hashir Ahmad
-tags: [fan-fiction, fictional-crossovers]
+categories:
+    - Blog
+tags: 
+    - fan-fiction
+    - fictional-crossovers
 ---
 > How would Sherlock reply to Robert Baratheon when he asks him to investigate Lyanna Stark's death?
 
 **Prologue**
 
 Robert Baratheon is devastated by the death of her beloved, Lyanna Stark. He orders his hand, Ned Stark to send a raven to 221B Baker Street, London to summon Sherlock and Dr. John Watson to King’s Landing, and investigate the matter concerning Lyanna’s death.
+
+<!--more-->
 
 *21<sup>st</sup> century London...*
 

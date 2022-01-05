@@ -1,8 +1,13 @@
 ---
-layout: post
-author: Hashir Ahmad
-tags: [machine-learning, hidden-markov-models, filtering, smoothing]
 mathjax: true
+categories:
+    - blog
+tags: 
+    - machine-learning
+    - hidden-markov-models
+    - filtering
+    - smoothing
+
 ---
 [TODO]
 ### Filtering

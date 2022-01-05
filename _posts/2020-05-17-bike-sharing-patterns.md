@@ -1,12 +1,19 @@
 ---
-layout: post
-title: "Udacity Projects Series | Part 1: Predicting Bike Sharing Patterns" 
+title: "Udacity Projects Series Part 1: Predicting Bike Sharing Patterns"
 comments: true
 mathjax: true
-author: Hashir Ahmad
-tags: [udacity, numpy, backpropagation, regression]
+categories:
+    - Blog
+tags: 
+    - udacity
+    - numpy
+    - backpropagation
+    - regression
+
 ---
 I have had a lot of fun doing Udacity's Deep Learning Nanodegree and would highly recommend enrolling in it. For me, the projects were the highlight of this nanodegree. From implementing a neural network from scratch in NumPy to deploying an entire model on Amazon Web Services, the projects provided a very good understanding of the different aspects of deep learning. As suggested by the fellows at Udacity and also by the seasoned individuals, I am making a habit to document my projects and learned skills. This 5 part series justifies that purpose where I write about my implementations of the projects. In the particular order, we discuss the following projects:
+
+<!--more-->
 
 1. Predicting Bike Sharing Patterns
 2. Dog Breed Classifier
@@ -21,7 +28,7 @@ In the first part (project), we will understand and build a neural network from 
 ## Dataset
 We are using University of Porto's Bike Sharing Dataset. This dataset has the number of riders for each hour of each day from January 1, 2011 to December 31, 2012. The number of riders is split between casual and registered, summed up in the *cnt* column. You can see the first few rows of the data below.
 
-![data](/public/images/bike-sharing-data.PNG)
+![data](/assets/images/bike-sharing-data.PNG)
 
 The information about the different columns of the dataset can be viewed [here](https://archive.ics.uci.edu/ml/datasets/Bike+Sharing+Dataset#). For our purpose, the target columns are *cnt*, *casual* and *registered*. The rest of the columns serve as the input features. Some of the columns have categorical values like *weathersit*, *mnth*, *season*, *hr* and *weekday*. We convert these into one-hot representation using Pandas' `get_dummies()` method. We delete the respective columns and also some other columns which are not useful like *instant*, *dteday*, *atemp* and *workingday*.
 
@@ -141,12 +148,12 @@ This can take a lot of time since we have no idea how to select the best configu
 In this manner, we can locally get the best set of hyperparameters to fine tune our model. 
 
 ### Results
-![result](/public/images/bike-sharing-results.PNG)
+![result](/assets/images/bike-sharing-results.PNG)
 
 The model predicts the ridership data very well during Dec 11-Dec 21. After that, the prediction seems to follow the previous trend but diverges from the actual data. There is a plausible reason for this. The weekdays following Dec 22 are actually the holidays where the ridership will go down. But since this information is not present in the training data, the model follows the trend in the training data only and performs poorly during the holidays 🎅. This also makes sense why modeling the stock market is very hard. 
 
 ### Conclusion
-In this extensive post, we came to know about the bits and pieces of training a neural network from scratch in NumPy. Moreover, we also studied the dataset and transformed the features. This started with identifying the target columns, converting the categorical columns to one-hot representation, dropping some irrelevant columns and finally normalizing the input features. For the network, we created a 2-layer perceptron and initialized its weights using a normal distribution. Then, we worked out the forward pass and backward pass. The latter involving the backpropagation algorithm. From there, we computed the update equation used in gradient descent to modify our weights and finally put everything together in the training module. Finally, we looked into hyperparameter tuning and performing a grid search to select the best local set of hyperparameters that maximize the performance of the model. Click [here](https://github.com/hash-ir/Predicting-Bike-Sharing-Patterns/blob/master/Predicting_bike_sharing_data.ipynb) to access the jupyter notebook of this project. 
+In this extensive post, we came to know about the bits and pieces of training a neural network from scratch in NumPy. Moreover, we also studied the dataset and transformed the features. This started with identifying the target columns, converting the categorical columns to one-hot representation, dropping some irrelevant columns and finally normalizing the input features. For the network, we created a 2-layer perceptron and initialized its weights using a normal distribution. Then, we worked out the forward pass and backward pass. The latter involving the backpropagation algorithm. From there, we computed the update equation used in gradient descent to modify our weights and put everything together in the training module. Finally, we looked into hyperparameter tuning and performing a grid search to select the best local set of hyperparameters that maximizes the performance of the model. Click [here](https://github.com/hash-ir/Predicting-Bike-Sharing-Patterns/blob/master/Predicting_bike_sharing_data.ipynb) to access the jupyter notebook of this project. 
 
 I hope you learned a few things from this post. It always excites me to write something about what I am doing. The other posts in this 5-part series will follow soon. If you have some feedback or want to add something on this post, feel free to drop a comment below!
 

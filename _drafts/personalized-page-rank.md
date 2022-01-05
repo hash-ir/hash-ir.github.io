@@ -1,7 +1,9 @@
 ---
-layout: post
-author: Hashir Ahmad
-tags: [data-mining, page-rank]
 mathjax: true
+categories:
+    - blog
+tags: 
+    - data-mining
+    - page-rank
 ---
 [TODO]

@@ -1,13 +1,18 @@
 ---
-layout: post
 title: "Precision and Recall: A different perspective"
 comments: true
-author: Hashir Ahmad
-tags: [machine-learning, deep-learning, philosophical]
+categories:
+    - Blog
+tags: 
+    - machine-learning
+    - deep-learning
+    - philosophical
 ---
 ![precision-recall](https://images.unsplash.com/photo-1550985543-49bee3167284?ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80)
 
 How many times did you have to remember what precision and recall actually are? You might know the formulation but agree with me, they are not very intuitive. Personally, I have see an example every time to understand them and their counter-balancing nature.
+
+<!--more-->
 
 Both precision and recall are widely used metrics in Machine Learning. On a quick search, this is what defines precision and recall:
 
