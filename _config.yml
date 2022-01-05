@@ -33,7 +33,7 @@ search: true
 # User settings
 twitter_username: __hash__ir_
 github_username: hash-ir
-minimal_mistakes_skin: dark # default # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
+minimal_mistakes_skin:  dirt # dark # default "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
 
 
 # Build settings
